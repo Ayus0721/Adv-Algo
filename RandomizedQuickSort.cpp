@@ -63,10 +63,14 @@ void printArray(int arr[], int size)
 int main()
 {
     int arr[] = { 10, 7, 8, 9, 1, 5 };
+    printf("Orignal Array is:\n");
+    printArray(arr,6);
+    printf("\n");
     int n = sizeof(arr) / sizeof(arr[0]);
     
-    quickSort(arr, 0, n - 1);
     printf("Sorted array: \n");
+    quickSort(arr, 0, n - 1);
+    
     printArray(arr, n);
     
     return 0;
